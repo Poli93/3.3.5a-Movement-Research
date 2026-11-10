@@ -15,7 +15,7 @@ AoE: TargetCombatReach + AttackRadius + IfSourceIsRunning(8/3) (CombatReach appl
 **Myth: Jumping takes longer to update: FALSE**
 
 Jumping updates faster than running, contrary to common belief!, a jump takes 0.825 seconds
-`air time = 2 × launch speed / gravity = 2 × 7.9555 / 19.2911 = 0.8248s`
+```air time = 2 × launch speed / gravity = 2 × 7.9555 / 19.2911 = 0.8248s```
 While midair, the client still sends movement heartbeats, not only, the client also sends **more** updates while adding jumping, as the **more** movement actions the more updates.
 
 Examples:
