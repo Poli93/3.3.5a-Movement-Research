@@ -1,5 +1,7 @@
 ### 3.3.5a client movement updates and distance checks
 
+https://discord.gg/fZEEfHqUHn
+
 **Introduction**
 
 The server knows where you are only from movement packets your client sends. While you move, there is a movement heartbeat every 250ms (Blizzlike 500ms), plus an instant packet on every movement action: key press, key release, jump, landing and every 0.1 radians (5.7°) of mouse turn from the facing in your last movement packet of any kind. 
@@ -14,7 +16,7 @@ AoE: TargetCombatReach + AttackRadius + IfSourceIsRunning(8/3) (CombatReach appl
 
 **Myth: Jumping takes longer to update: FALSE**
 
-Jumping updates faster than running, contrary to common belief!
+Jumping updates faster than running, contrary to old myths!
 A jump on flat ground takes 0.825 seconds:
 
 ```AirTime = 2 * launch speed / gravity = 2 * 7.9555 / 19.2911 = 0.8248s```
