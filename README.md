@@ -14,9 +14,12 @@ AoE: TargetCombatReach + AttackRadius + IfSourceIsRunning(8/3) (CombatReach appl
 
 **Myth: Jumping takes longer to update: FALSE**
 
-Jumping updates faster than running, contrary to common belief!, a jump takes 0.825 seconds
+Jumping updates faster than running, contrary to common belief!
+A jump on flat ground takes 0.825 seconds:
 
 ```AirTime = 2 * launch speed / gravity = 2 * 7.9555 / 19.2911 = 0.8248s```
+
+7.9555 yd/s is the jump's upward launch speed and 19.29 yd/s² is WoW's gravity.
 
 While midair, the client still sends movement heartbeats, not only, the client also sends **more** updates while adding jumping, as the **more** movement actions the more updates.
 
