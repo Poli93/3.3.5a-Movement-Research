@@ -9,7 +9,7 @@ The server knows where you are only from movement packets your client sends. Whi
 ```
 Melee attack: MAX(5, SourceCombatReach + TargetCombatReach + 4/3) + IfSourceAndTargetAreAndRunning(8/3)
 Ranged attack: SourceCombatReach + TargetCombatReach + AttackRange + IfSourceAndTargetAreAndRunning(8/3)
-AoE: TargetCombatReach + AttackRadius + IfSourceIsRunning(8/3) (CombatReach applies only if a center-to-edge ability, does not apply to center-to-center abilities)
+AoE: TargetCombatReach + AttackRadius + IfSourceIsRunning(8/3) (CombatReach applies only to a center-to-edge ability, does not apply to center-to-center abilities)
 ```
 
 **Myth: Jumping takes longer to update: FALSE**
